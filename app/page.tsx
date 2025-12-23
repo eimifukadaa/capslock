@@ -28,7 +28,7 @@ export default function Home() {
       >
         <Link
           href="/gallery"
-          className="text-xs md:text-sm tracking-[0.3em] font-sans text-gold-muted hover:text-gold transition-all duration-700 border-b border-transparent hover:border-gold pb-1"
+          className="text-lg md:text-xl tracking-[0.3em] font-sans text-gold-muted hover:text-gold transition-all duration-700 border-b border-transparent hover:border-gold pb-1"
           data-hover="ENTER"
         >
           ENTER THE VAULT
