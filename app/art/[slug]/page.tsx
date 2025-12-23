@@ -5,6 +5,8 @@ import { notFound } from "next/navigation";
 import { ArrowLeft } from "lucide-react";
 import { ArtworkDetailClient } from "@/components/artwork-detail-client";
 
+export const dynamic = 'force-dynamic';
+
 export default async function ArtworkDetailPage({ params }: { params: Promise<{ slug: string }> }) {
     const { slug } = await params;
     const supabase = await createClient();
