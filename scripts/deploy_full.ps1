@@ -25,12 +25,8 @@ if ($LASTEXITCODE -ne 0) {
     npx vercel login
 }
 
-# Attempt link and deploy
-Write-Host "`n[INFO] Linking Project..."
-# We use --yes to default to current folder name/settings
-npx vercel link --yes
-
-Write-Host "`n[INFO] Deploying to Production..."
-npx vercel deploy --prod
+Write-Host "`n[INFO] Deploying to Production (Project: capslock-gallery)..."
+# We skip 'link' and go straight to deploy with explicit name and --yes to avoid prompts
+npx vercel deploy --prod --name capslock-gallery --yes
 
 Write-Host "`n[SUCCESS] Deployment sequence complete!"
