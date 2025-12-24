@@ -6,6 +6,7 @@ import { motion, useMotionValue, useSpring } from "framer-motion";
 export function CustomCursor() {
     const [isHovered, setIsHovered] = useState(false);
     const [hoverText, setHoverText] = useState("");
+    const [isTouch, setIsTouch] = useState(false);
 
     const mouseX = useMotionValue(0);
     const mouseY = useMotionValue(0);
@@ -15,6 +16,8 @@ export function CustomCursor() {
     const springY = useSpring(mouseY, springConfig);
 
     useEffect(() => {
+        setIsTouch('ontouchstart' in window || navigator.maxTouchPoints > 0);
+
         const moveCursor = (e: MouseEvent) => {
             mouseX.set(e.clientX);
             mouseY.set(e.clientY);
@@ -51,6 +54,8 @@ export function CustomCursor() {
             window.removeEventListener("mouseover", handleMouseOver);
         };
     }, [mouseX, mouseY]);
+
+    if (isTouch) return null;
 
     return (
         <motion.div
