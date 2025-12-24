@@ -17,6 +17,10 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "CAPSLOCK GALLERY",
   description: "A dark luxury art vault.",
+  icons: {
+    icon: '/flower-logo.png',
+    apple: '/flower-logo.png',
+  },
 };
 
 export default function RootLayout({

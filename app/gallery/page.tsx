@@ -24,8 +24,17 @@ export default async function GalleryPage() {
     return (
         <div className="bg-obsidian min-h-screen overflow-x-hidden">
             <div className="fixed top-4 left-4 md:top-8 md:left-8 z-50 flex gap-3 md:gap-4 items-baseline">
-                <Link href="/" className="font-serif text-base md:text-xl tracking-widest text-soft-white group drop-shadow-lg">
-                    CAPSLOCK
+                <Link href="/" className="flex items-center gap-2 md:gap-3 group">
+                    <Image
+                        src="/flower-logo.png"
+                        alt="Flower Logo"
+                        width={24}
+                        height={24}
+                        className="w-5 h-5 md:w-6 md:h-6 object-contain transition-transform duration-500 group-hover:scale-110"
+                    />
+                    <span className="font-serif text-base md:text-xl tracking-widest text-soft-white drop-shadow-lg">
+                        CAPSLOCK
+                    </span>
                     <span className="block h-[1px] w-0 bg-soft-white transition-all duration-500 group-hover:w-full"></span>
                 </Link>
 
