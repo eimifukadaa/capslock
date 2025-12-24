@@ -33,7 +33,7 @@ export default async function GalleryPage() {
                         className="w-5 h-5 md:w-6 md:h-6 object-contain transition-transform duration-500 group-hover:scale-110"
                     />
                     <span className="font-serif text-base md:text-xl tracking-widest text-soft-white drop-shadow-lg">
-                        CAPSLOCK
+                        CAPSLOCK GALLERY
                     </span>
                     <span className="block h-[1px] w-0 bg-soft-white transition-all duration-500 group-hover:w-full"></span>
                 </Link>
