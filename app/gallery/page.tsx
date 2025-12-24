@@ -23,7 +23,7 @@ export default async function GalleryPage() {
 
     return (
         <div className="bg-obsidian min-h-screen overflow-x-hidden">
-            <div className="fixed top-4 left-4 md:top-8 md:left-8 z-50 flex gap-3 md:gap-4 items-baseline">
+            <div className="fixed top-4 left-4 md:top-8 md:left-8 z-50 flex gap-6 md:gap-8 items-center">
                 <Link href="/" className="flex items-center gap-2 md:gap-3 group">
                     <Image
                         src="/flower-logo.png"
@@ -38,7 +38,7 @@ export default async function GalleryPage() {
                     <span className="block h-[1px] w-0 bg-soft-white transition-all duration-500 group-hover:w-full"></span>
                 </Link>
 
-                <Link href="/about" className="font-serif text-[10px] md:text-xs tracking-widest text-soft-gray/60 hover:text-soft-white transition-all duration-500 hover:tracking-[0.2em]">
+                <Link href="/about" className="font-serif text-sm md:text-base tracking-widest text-soft-white/90 hover:text-gold transition-all duration-500 hover:tracking-[0.25em] border-b border-transparent hover:border-gold pb-1">
                     ABOUT
                 </Link>
             </div>
