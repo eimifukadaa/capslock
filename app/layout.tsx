@@ -18,8 +18,12 @@ export const metadata: Metadata = {
   title: "CAPSLOCK GALLERY",
   description: "A dark luxury art vault.",
   icons: {
-    icon: '/flower-logo.png',
-    apple: '/flower-logo.png',
+    icon: [
+      { url: '/flower-logo.png?v=2', sizes: 'any' },
+      { url: '/icon.png?v=2', sizes: 'any' },
+    ],
+    apple: '/apple-touch-icon.png?v=2',
+    shortcut: '/flower-logo.png?v=2',
   },
 };
 
