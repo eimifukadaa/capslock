@@ -7,11 +7,32 @@ export default function Home() {
   return (
     <main className="flex h-screen w-full flex-col items-center justify-center bg-obsidian text-soft-white overflow-hidden">
       <motion.div
-        initial={{ opacity: 0, scale: 0.95 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1.5, ease: "easeOut" }}
-        className="text-center z-10"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.2, ease: "easeOut" }}
+        className="flex flex-col items-center z-10"
       >
+        <motion.div
+          animate={{
+            scale: [1, 1.05, 1],
+            opacity: [0.8, 1, 0.8]
+          }}
+          transition={{
+            duration: 4,
+            repeat: Infinity,
+            ease: "easeInOut"
+          }}
+          className="mb-8"
+        >
+          <Image
+            src="/flower-logo.png"
+            alt="Flower Logo"
+            width={80}
+            height={80}
+            className="w-16 h-16 md:w-20 md:h-20 object-contain drop-shadow-[0_0_15px_rgba(255,0,0,0.3)]"
+          />
+        </motion.div>
+
         <h1 className="font-serif text-5xl md:text-7xl lg:text-9xl tracking-widest mb-4">
           CAPSLOCK
         </h1>

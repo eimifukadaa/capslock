@@ -23,8 +23,9 @@ export default async function GalleryPage() {
 
     return (
         <div className="bg-obsidian min-h-screen overflow-x-hidden">
-            <div className="fixed top-4 left-4 md:top-8 md:left-8 z-50 flex gap-6 md:gap-8 items-center">
-                <Link href="/" className="flex items-center gap-2 md:gap-3 group">
+            {/* Header / Nav */}
+            <div className="fixed top-4 left-4 right-4 md:top-8 md:left-8 md:right-8 z-50 flex justify-between items-center pointer-events-none">
+                <Link href="/" className="flex items-center gap-2 md:gap-3 group pointer-events-auto">
                     <Image
                         src="/flower-logo.png"
                         alt="Flower Logo"
@@ -38,7 +39,7 @@ export default async function GalleryPage() {
                     <span className="block h-[1px] w-0 bg-soft-white transition-all duration-500 group-hover:w-full"></span>
                 </Link>
 
-                <Link href="/about" className="font-serif text-sm md:text-base tracking-widest text-soft-white/90 hover:text-gold transition-all duration-500 hover:tracking-[0.25em] border-b border-transparent hover:border-gold pb-1">
+                <Link href="/about" className="font-serif text-sm md:text-base tracking-widest text-soft-white/90 hover:text-gold transition-all duration-500 hover:tracking-[0.25em] border-b border-transparent hover:border-gold pb-1 pointer-events-auto">
                     ABOUT
                 </Link>
             </div>
@@ -87,8 +88,16 @@ export default async function GalleryPage() {
             </div>
 
             {/* Footer / End of Scroll */}
-            <footer className="h-[50vh] flex flex-col items-center justify-center bg-obsidian text-soft-gray/50 px-4">
+            <footer className="h-[70vh] flex flex-col items-center justify-center bg-obsidian text-soft-gray/50 px-4">
+                <Image
+                    src="/flower-logo.png"
+                    alt="Flower Logo"
+                    width={48}
+                    height={48}
+                    className="w-10 h-10 md:w-12 md:h-12 object-contain mb-8 opacity-40 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-700"
+                />
                 <p className="font-serif text-xl md:text-2xl mb-4 italic text-center">End of Collection</p>
+                <div className="w-12 h-[1px] bg-soft-white/10 mb-8" />
                 <p className="font-sans text-[10px] md:text-xs tracking-widest text-center">© 2025 CAPSLOCK GALLERY</p>
             </footer>
         </div>

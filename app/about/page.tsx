@@ -6,9 +6,9 @@ export default function AboutPage() {
         <div className="min-h-screen bg-obsidian text-soft-white selection:bg-gold selection:text-black font-sans">
             {/* Nav */}
             <div className="fixed top-8 left-8 z-50">
-                <Link href="/gallery" className="flex items-center gap-2 group text-soft-gray hover:text-soft-white transition-colors" data-hover="BACK">
-                    <ArrowLeft className="w-4 h-4 transition-transform group-hover:-translate-x-1" />
-                    <span className="font-sans text-[10px] tracking-[0.2em] uppercase">BACK TO GALLERY</span>
+                <Link href="/gallery" className="flex items-center gap-3 group text-soft-white/90 hover:text-gold transition-all duration-500" data-hover="BACK">
+                    <ArrowLeft className="w-5 h-5 transition-transform group-hover:-translate-x-1" />
+                    <span className="font-serif text-sm md:text-base tracking-[0.2em] uppercase border-b border-transparent group-hover:border-gold pb-1">BACK TO GALLERY</span>
                 </Link>
             </div>
 
